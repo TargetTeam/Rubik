@@ -30,11 +30,8 @@ public final class MoveSequence
 	// m=9-11, cube turn
 	// m=12-14, slice move
 	// m=15-17, anti-slice move
+	
 	public String toString(boolean inverse)
-	{
-		return(toString(inverse,-1));
-	}
-	public String toString(boolean inverse, int pos)
 	{
 		int i,j,m,di,qtm=0,ftm=0,stm=0,q;
 		StringBuffer sol=new StringBuffer();
