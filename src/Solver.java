@@ -34,19 +34,10 @@ abstract class Solver implements Runnable
                     solve(); // do it!
                     this.running = false;
                     settings.generator = getGenerator();
-                    stop();
                     
 		}
 	}
 
-	void stop(){
-            
-            MoveSequence generator = settings.generator;
-            settings.cubePos.doSequence( generator );
-            int seqPos = generator.getLength();
-            System.out.println( generator.toString(true,seqPos) );
-            
-	}
 
 
 	// access function prepared flag
